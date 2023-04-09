@@ -1,0 +1,20 @@
+<div class="cases" #element>
+  <div
+    class="container"
+    [ngClass]="viewport && viewport.visible ? 'fadeUp' : null"
+  >
+    <div class="cases-title">
+      <h2 class="title">Cases</h2>
+      <h5>All cases</h5>
+    </div>
+    <div class="items">
+      <div class="item" *ngFor="let item of items">
+        <h4>{{ item.title }}</h4>
+        <p>
+          {{ item.desc }}
+        </p>
+        <a href="#">Read More</a>
+      </div>
+    </div>
+  </div>
+</div>

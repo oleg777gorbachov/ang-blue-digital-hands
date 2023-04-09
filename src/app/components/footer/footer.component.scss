@@ -1,0 +1,70 @@
+@import "../../vars";
+
+footer {
+  background-color: black;
+  padding: 4rem 0px;
+  color: white;
+
+  h4 {
+    font-weight: 500;
+    font-size: 24px;
+  }
+
+  .container {
+    display: flex;
+    gap: 2rem;
+    @media screen and (max-width: $sm) {
+      flex-wrap: wrap;
+    }
+  }
+
+  .footer-contact {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .footer-menu {
+    flex-basis: 25%;
+    width: 100%;
+    @media screen and (max-width: $sm) {
+      flex-basis: 100%;
+    }
+  }
+
+  .footer-info {
+    flex-basis: 75%;
+    padding: 1rem 0;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+    border-bottom: 2px solid white;
+    border-top: 2px solid white;
+
+    @media screen and (max-width: $sm) {
+      flex-basis: 100%;
+    }
+  }
+
+  li {
+    font-weight: 400;
+    font-size: 18px;
+    border-top: 2px solid white;
+    padding: 0.5rem 0;
+
+    a {
+      transition: all 0.3s;
+
+      @media (hover: hover) {
+        &:hover {
+          color: $blue;
+        }
+      }
+    }
+
+    &:last-child {
+      border-bottom: 2px solid white;
+    }
+  }
+}

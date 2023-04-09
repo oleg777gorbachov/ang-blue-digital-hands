@@ -1,0 +1,18 @@
+<div class="container service" #element [ngClass]="viewport && viewport.visible ? 'fadeUp' : null">
+  <h2 class="title" *ngIf="title">Our Services</h2>
+  <div class="service-items">
+    <div class="service-item" *ngFor="let item of services">
+      <img src="{{ item.icon }}" alt="icon" />
+      <h3>{{ item.title }}</h3>
+      <p>
+        {{item.description}}
+      </p>
+      <app-btn 
+        text="Read more" 
+        textColor="white" 
+        bg="#3C5EF0" 
+        border="transparent"
+      />
+    </div>
+  </div>
+</div>

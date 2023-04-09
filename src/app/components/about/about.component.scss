@@ -1,0 +1,56 @@
+@import "../../vars";
+
+.about {
+  margin: 100px 0px;
+  overflow: hidden;
+
+  .container {
+    position: relative;
+    padding: 4rem 2rem;
+    background-color: $blue;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    color: white;
+    opacity: 0;
+  }
+
+  p {
+    font-weight: 300;
+    font-size: 18px;
+    max-width: 65%;
+    text-align: center;
+    @media screen and (max-width: $sm) {
+      max-width: 100%;
+    }
+  }
+  .btns {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+}
+
+.left-hand {
+  position: absolute;
+  left: -59px;
+  transform: scaleX(-1) translate(0%, -50%);
+  top: 50%;
+  @media screen and (max-width: $sm) {
+    display: none;
+  }
+}
+
+.right-hand {
+  position: absolute;
+  right: -59px;
+  top: 0;
+  top: 50%;
+  transform: translate(0%, -50%);
+  @media screen and (max-width: $sm) {
+    display: none;
+  }
+}

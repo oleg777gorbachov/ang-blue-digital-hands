@@ -1,0 +1,62 @@
+@import "../../vars";
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: all 1.3s;
+}
+
+.stars {
+  background-color: black;
+  color: white;
+  padding-top: 100px;
+  position: relative;
+  overflow: hidden;
+
+  h2 {
+    font-weight: 700;
+    font-size: 53px;
+  }
+  .container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  &-img {
+    flex-basis: 50%;
+    width: 100%;
+    display: flex;
+    z-index: 1;
+    transition: all 0.3s;
+    opacity: 0;
+    @media screen and (max-width: $sm) {
+      display: none;
+    }
+  }
+
+  &-info {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 100px;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.3s;
+    @media screen and (max-width: $sm) {
+      flex-basis: 75%;
+      margin: 0 auto 100px auto;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    p {
+      font-size: 22px;
+      font-weight: 300;
+    }
+  }
+}

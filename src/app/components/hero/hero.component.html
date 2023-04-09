@@ -1,0 +1,25 @@
+<div class="container hero" #element>
+  <div [ngClass]="visibleInfo ? 'fadeRight' : null">
+    <h1>{{ title }}</h1>
+    <h3>{{ description }}</h3>
+    <div class="hero-btns">
+      <app-btn
+        text="Contact Us"
+        border="transparent"
+        bg="#3C5EF0"
+        textColor="white"
+      ></app-btn>
+      <app-btn text="explore now"></app-btn>
+    </div>
+  </div>
+  <div class="fadeLeft">
+    <img src="assets/hero.png" alt="hero" />
+  </div>
+  <div
+    class="up"
+    [ngClass]="viewport && !viewport.visible ? 'fadeUp' : null"
+    (click)="toUp()"
+  >
+    &uarr;
+  </div>
+</div>

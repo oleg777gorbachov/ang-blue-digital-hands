@@ -1,0 +1,46 @@
+@import "../../vars";
+
+.service {
+  padding-top: 140px;
+  padding-bottom: 140px;
+  opacity: 0;
+
+  h2 {
+    text-align: center;
+  }
+
+  &-items {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 4rem;
+
+    @media screen and (max-width: $sm) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &-item {
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0;
+    border-bottom: 1px solid black;
+    gap: 2rem;
+    align-items: center;
+
+    h3 {
+      font-size: 24px;
+      font-weight: 500;
+    }
+
+    img {
+      max-width: 64px;
+    }
+
+    app-btn {
+      align-self: flex-end;
+      margin-top: auto;
+    }
+  }
+}

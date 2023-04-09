@@ -1,0 +1,54 @@
+<div class="contact" #element>
+  <div 
+    class="container"
+    [ngClass]="viewport && viewport.visible ? 'fadeUp' : null"
+    >
+    <div class="contact-img">
+      <img src="assets/phone.png" alt="holding phone" />
+    </div>
+    <div class="contact-form">
+      <h3>Get in touch</h3>
+      <form [formGroup]="myForm" (ngSubmit)="submit($event)">
+        <label>
+          Name
+          <input type="text" required formControlName="name" />
+        </label>
+        <app-error *ngIf="name.errors?.minlength && name.touched" class="error">
+          Name must be at least 2 character long.
+        </app-error>
+        <label>
+          Email
+          <input type="email" required formControlName="email" />
+        </label>
+        <app-error
+          *ngIf="email.errors?.email&& email.touched"
+          message="Email is invalid."
+        />
+        <label>
+          Subject
+          <input type="text" required formControlName="subject" />
+        </label>
+        <app-error
+          *ngIf="subject.errors?.minlength && subject.touched"
+          message="Subject must be at least 1 character long."
+        />
+        <label>
+          Comment
+          <textarea required formControlName="comment"></textarea>
+        </label>
+        <app-error
+          *ngIf="comment.errors?.minlength && comment.touched"
+          message="Comment must be at least 25 characters long."
+        />
+      
+        <app-btn
+          text="Read More"
+          border="transparent"
+          bg="#ECE9E5"
+          textColor="#3c5ef0"
+          (click)="submit($event)"
+        ></app-btn>
+      </form>
+    </div>
+  </div>
+</div>

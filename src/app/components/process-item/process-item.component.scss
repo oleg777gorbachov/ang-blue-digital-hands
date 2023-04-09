@@ -1,0 +1,13 @@
+@import "../../vars";
+
+.process-item {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 4rem 1rem;
+
+  h4 {
+    font-weight: 600;
+    font-size: 36px;
+    color: $blue;
+  }
+}

@@ -1,0 +1,26 @@
+@import "../../vars";
+
+h2 {
+  color: $blue;
+  font-weight: 900;
+  font-size: 100px;
+  line-height: 100%;
+  
+  @media screen and (max-width: $xs) {
+    font-size: 64px;
+  }
+}
+
+p {
+  font-weight: 400;
+  font-size: 24px;
+  @media screen and (max-width: $xs) {
+    font-size: 20px;
+  }
+}
+
+div {
+  text-align: center;
+  margin: 200px 0;
+  opacity: 0;
+}

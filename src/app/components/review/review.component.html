@@ -1,0 +1,39 @@
+<div class="review" #element>
+  <div
+    class="container"
+    [ngClass]="viewport && viewport.visible ? 'fadeRight' : null"
+  >
+    <button
+      class="btn-left"
+      (click)="slideLeft()"
+      [ngClass]="items.length > 1 ? null : 'hide'"
+    >
+      &larr;
+    </button>
+    <div class="items-container">
+      <div class="items" [ngStyle]="styles()" #slider>
+        <div class="item" *ngFor="let item of items">
+          <img src="{{ item.img }}" alt="author" />
+          <p>
+            {{ item.desc }}
+          </p>
+          <div>
+            <h5>
+              {{ item.author }}
+            </h5>
+            <p>
+              {{ item.job }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button
+      class="btn-right"
+      (click)="slideRight()"
+      [ngClass]="items.length > 1 ? null : 'hide'"
+    >
+      &rarr;
+    </button>
+  </div>
+</div>

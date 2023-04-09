@@ -1,0 +1,18 @@
+<header class="container">
+  <div class="nav-logo">
+    <a routerLink="">Blue hands <em>Digital</em></a>
+  </div>
+  <nav>
+    <div class="nav-burger" (click)="state = !state">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul [class.open]="state">
+      <span class="close" (click)="state = !state">✕</span>
+      <li *ngFor="let item of items">
+        <a routerLink="{{ item.path }}">{{ item.label }}</a>
+      </li>
+    </ul>
+  </nav>
+</header>

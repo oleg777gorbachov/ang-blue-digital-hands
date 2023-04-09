@@ -1,0 +1,16 @@
+<div class="stars" #container>
+  <canvas #snowfall [ngStyle]="viewport && viewport.visible ? {opacity: 0.7} : null"></canvas>
+  <div class="container">
+    <div class="stars-img" [ngClass]="viewport && viewport.visible ? 'fadeUp' : null">
+        <img src="assets/rocket.png" #rocket alt="rocket" />
+    </div>
+    <div class="stars-info" [ngClass]="viewport && viewport.visible ? 'fadeLeft' : null">
+      <h2>Reach for the stars!</h2>
+      <p>
+        Take 30 minutes to find out how we can help you grow your business and
+        take your marketing to the next level!
+      </p>
+      <app-btn text="book a meeting" border="transparent" textColor="white" bg="#3C5EF0"/>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,27 @@
+<footer>
+  <div class="container">
+    <div class="footer-info">
+      <div>
+        <h4>Contacts</h4>
+        <div class="footer-contact">
+          <div>
+            <p>Email: hello@bluehandsdigital.com</p>
+            <p>Phone: +46 70 066 0092</p>
+          </div>
+          <div>
+            <p>Location: Saltmätargatan 8a</p>
+            <p>Stockholm, SWEDEN</p>
+          </div>
+        </div>
+      </div>
+      <div>Copyright {{ year }} · Blue Hands Digital™</div>
+    </div>
+    <div class="footer-menu">
+      <ul>
+        <li *ngFor="let item of items">
+          <a href="#">{{ item }}</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>

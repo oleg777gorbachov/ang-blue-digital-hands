@@ -1,0 +1,15 @@
+<div class="faq" #element>
+  <div 
+    class="container" 
+    [ngClass]="viewport && viewport.visible ? 'fadeLeft' : null"
+  >
+    <h2 class="title">FAQ</h2>
+    <div class="items">
+      <app-accordion
+        *ngFor="let item of items"
+        title='{{item.title}}'
+        desc='{{item.desc}}'
+      />
+    </div>
+  </div>
+</div>

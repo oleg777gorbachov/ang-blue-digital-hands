@@ -1,0 +1,75 @@
+@import "../../vars";
+
+.contact {
+  margin: 100px 0;
+  color: white;
+
+  .container {
+    opacity: 0;
+  }
+
+  h3 {
+    font-weight: 400;
+    font-size: 32px;
+  }
+
+  .container {
+    display: flex;
+  }
+
+  &-img {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-basis: 33%;
+    padding-top: 100px;
+    @media screen and (max-width: $sm) {
+      display: none;
+    }
+    img {
+      width: 100%;
+    }
+  }
+
+  &-form {
+    flex-basis: 66%;
+    background-color: $blue;
+    padding: 2rem 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @media screen and (max-width: $sm) {
+      flex-basis: 100%;
+    }
+    @media screen and (max-width: $xs) {
+      padding: 2rem;
+    }
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+
+    label {
+      font-weight: 400;
+      font-size: 18px;
+      display: flex;
+      flex-direction: column;
+      margin-top: 0.5rem;
+    }
+    input,
+    textarea {
+      width: 100%;
+    }
+  }
+
+  app-btn {
+    margin-top: 1rem;
+    text-align: end;
+  }
+}
+
+.error {
+  color: red;
+}

@@ -1,0 +1,90 @@
+<div class="hero">
+  <p>This is</p>
+  <h2>Blue Hands Digital</h2>
+  <img src="assets/hands.png" alt="hand" class="hand" />
+</div>
+<div class="under-hero">
+  <div class="container">
+    <div>
+      <h3>Your helping hand in digital marketing</h3>
+      <p>
+        Many might think that the more social media platforms you advertise on,
+        the better the results are gonna be. We at Blue Hands disagree. If there
+        are long-term results and big engagement you want, you will need to find
+        the platforms that your audience are using.
+      </p>
+    </div>
+    <img src="assets/handshow.png" alt="hand-show" />
+  </div>
+</div>
+<div class="vision">
+  <div class="container">
+    <h3>Vision</h3>
+    <p>
+      We have spent years creating and perfecting a formula that can be utilized
+      by any business to see growth and increased revenue through
+    </p>
+  </div>
+</div>
+<div class="process">
+  <div class="container">
+    <h3>Our Process</h3>
+    <p>
+      Need some help standing out and growing your business? At Blue Hands, we
+      specialize in helping businesses attract new customers and to establish
+      strong brand awareness. Our customized, performance-based marketing
+      strategies are proven to grow and stimulate businesses of all shapes,
+      sizes and niches. ‍
+    </p>
+    <div class="items">
+      <app-process-item 
+        desc="{{item.desc}}" 
+        icon="{{item.icon}}" 
+        title="{{item.title}}" 
+        *ngFor="let item of items; let i = index"
+        [ngStyle]="{marginTop: i * 4 + 'rem'}"
+      />
+    </div>
+  </div>
+</div>
+<div class="different">
+  <div class="container">
+    <div class="different-info">
+      <h3>
+        What makes us different?
+      </h3>
+      <p>
+        Trust us, we get this question a lot.‍Back in 2014, when the idea of Blue Hands Digital started forming, Facebook had just released the blue THUMBS UP custom emoji, in the form of a Blue Hand. In addition, all the social media platforms were blue – think Facebook, LinkedIn, Twitter were all blue (Instagram was also grey back then). To further guide people on what we do, (and avoid them searching for a bunch of medical blue hand diseases) we added “Digital” in the end for clarification.l.
+      </p>
+    </div>
+    <img src="assets/team.png" alt="team"/>
+  </div>
+</div>
+<div class="digital">
+  <div class="container">
+    <h3>The life at Blue Hands Digital</h3>
+    <img src="assets/team2.png" alt="team"/>
+    <div class="digital-info">
+      <div>
+        <p>
+          At Blue Hands Digital, we fundamentally believe that “work life” isn’t necessarily separate from a personal one. Life happens right in the middle of work, in it and all around it, which is why we value having fun while constantly striving for growth and excellence in our work.
+        </p>
+        <p>
+          Our core values (Integrity, Authenticity, Growth) also help paint the picture of what matters most to us here at Blue Hands. All personalities are welcome here! That, and the fact that we stay sharp and versatile this evolving, digital world.‍
+        </p> 
+        <p> 
+          We work hard, love doing what we do and we have each other’s backs… And that is part of what makes us different.
+        <p>
+        </p> 
+      </div>
+      <div class="digital-apply">
+        <a href="#">
+          Apply for a job
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 4.5l15 15m0 0V8.25m0 11.25H8.25" />
+          </svg>  
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

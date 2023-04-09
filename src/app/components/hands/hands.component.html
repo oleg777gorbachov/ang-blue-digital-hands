@@ -1,0 +1,25 @@
+<div class="hands" #element>
+  <img src="assets/hand.png" alt="hand" class="left-hand" />
+  <div class="container" [ngClass]="viewport && viewport.visible ? 'fadeUp' : null">
+    <h2 class="title">Why Blue Hands Digital?</h2>
+    <p>
+      We have more than 20 years of experience between us within digital
+      marketing! Let us lend you a helping hand so that we can grow together.
+    </p>
+    <div class="items">
+      <div class="item" *ngFor="let item of items">
+        <h4>{{ item.title }}</h4>
+        <ul>
+          <li *ngFor="let list of item.items">
+            <span>{{ list }}</span> <strong>&#10003;</strong>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="btns">
+        <app-btn text="Book A Meeting" border="transpartent" textColor="white" bg="black"/>
+        <app-btn text="Case Studies" />
+    </div>
+  </div>
+  <img src="assets/hand.png" alt="hand" class="right-hand" />
+</div>
