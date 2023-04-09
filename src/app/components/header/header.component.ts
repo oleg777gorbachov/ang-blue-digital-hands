@@ -38,4 +38,8 @@ export class HeaderComponent {
       path: '',
     },
   ];
+
+  click() {
+    this.state = false;
+  }
 }

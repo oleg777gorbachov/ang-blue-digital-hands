@@ -11,7 +11,7 @@
     <ul [class.open]="state">
       <span class="close" (click)="state = !state">✕</span>
       <li *ngFor="let item of items">
-        <a routerLink="{{ item.path }}">{{ item.label }}</a>
+        <a routerLink="{{ item.path }}" (click)="click()">{{ item.label }}</a>
       </li>
     </ul>
   </nav>
